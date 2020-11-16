@@ -5,24 +5,16 @@ import React from "react";
 //Styled components
 import {
   RegisterContainer,
-  SocialMediaContainer,
   Paragraph,
   RegisterMessageContainer,
 } from "./components/RegisterStyles";
 
 //Components
 import RegisterForm from "./components/RegisterForm";
+import SocialMedia from "../../components/layout/SocialMedia";
 import { Link } from "react-router-dom";
 
-
 const Register = () => {
-  const socialMedia = [
-    { path: "assets/images/Google.svg", name: "Google" },
-    { path: "assets/images/Facebook.svg", name: "Facebook" },
-    { path: "assets/images/Twitter.svg", name: "Twitter" },
-    { path: "assets/images/Github.svg", name: "Github" },
-  ];
-
   return (
     <RegisterContainer>
       <div className="register__header">
@@ -42,11 +34,7 @@ const Register = () => {
         <p className="text-center text-muted">
           or continue with these social profile
         </p>
-        <SocialMediaContainer>
-          {socialMedia.map((link) => (
-            <img width="45" key={link.name} src={link.path} alt={link.name} />
-          ))}
-        </SocialMediaContainer>
+        <SocialMedia />
         <div className="login-link">
           <p className="text-center text-muted">
             Already a member?{" "}

@@ -23,13 +23,6 @@ export const RegisterContainer = styled.div`
   }
 `;
 
-export const SocialMediaContainer = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  width: 80%;
-  margin: 20px auto;
-`;
-
 export const Paragraph = styled.p`
   margin-bottom: 10px;
   font-size: 18px;
