@@ -6,7 +6,19 @@ const FooterContainer = styled.footer`
   display: flex;
   justify-content: space-between;
   position: absolute;
+  margin: 0 auto;
   bottom: -80px;
+  right: 0;
+  left: 0;
+
+  @media screen and (min-width: 768px){
+    width: 55%;
+    bottom: -20px;
+  }
+
+  @media screen and (min-width: 1024px){
+    width: 34%;
+  }
 `;
 
 const Footer = () => {

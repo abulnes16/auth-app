@@ -8,6 +8,19 @@ export const RegisterContainer = styled.div`
       }
     }
   }
+
+  @media screen and (min-width: 768px) {
+    width: 60%;
+    margin: 0 auto;
+    padding: 40px 60px;
+    border: 1px solid #bdbdbd;
+    box-sizing: border-box;
+    border-radius: 24px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 35%;
+  }
 `;
 
 export const SocialMediaContainer = styled.div`
