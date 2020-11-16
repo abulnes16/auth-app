@@ -9,6 +9,7 @@ body {
 }
 
 .App {
+  position: relative;
   padding: 12px 15px;
 }
 
