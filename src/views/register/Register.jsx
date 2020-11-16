@@ -4,10 +4,11 @@ import React from "react";
 
 //Styled components
 import {
-  RegisterContainer,
   Paragraph,
   RegisterMessageContainer,
 } from "./components/RegisterStyles";
+
+import AuthContainer from '../../components/AuthContainer';
 
 //Components
 import RegisterForm from "./components/RegisterForm";
@@ -17,7 +18,7 @@ import Logo from "../../components/Logo";
 
 const Register = () => {
   return (
-    <RegisterContainer>
+    <AuthContainer>
       <Logo />
       <RegisterMessageContainer>
         <Paragraph className="text-bold">
@@ -40,7 +41,7 @@ const Register = () => {
           </p>
         </div>
       </div>
-    </RegisterContainer>
+    </AuthContainer>
   );
 };
 
