@@ -1,12 +1,14 @@
-import Footer from './components/layout/Footer';
-import Login from './views/register/Register';
+import { BrowserRouter as Router } from "react-router-dom";
+import AppRouter from "./routes/Router";
+
 
 function App() {
   return (
-    <div className="App">
-      <Login></Login>
-      <Footer></Footer>
-    </div>
+    <Router>
+      <div className="App">
+        <AppRouter />
+      </div>
+    </Router>
   );
 }
 

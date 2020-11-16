@@ -1,11 +1,19 @@
+/* Register view */
+
 import React from "react";
+
+//Styled components
 import {
   RegisterContainer,
   SocialMediaContainer,
   Paragraph,
   RegisterMessageContainer,
 } from "./components/RegisterStyles";
+
+//Components
 import RegisterForm from "./components/RegisterForm";
+import { Link } from "react-router-dom";
+
 
 const Register = () => {
   const socialMedia = [
@@ -41,7 +49,10 @@ const Register = () => {
         </SocialMediaContainer>
         <div className="login-link">
           <p className="text-center text-muted">
-            Already a member? <a>Login</a>
+            Already a member?{" "}
+            <Link className="link" to="/login">
+              Login
+            </Link>
           </p>
         </div>
       </div>
