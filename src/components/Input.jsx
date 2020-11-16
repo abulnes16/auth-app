@@ -18,6 +18,7 @@ const InputContainer = styled.div`
 const Input = styled.input`
   outline: none;
   border: none;
+  background: transparent;
   width: 90%;
 `;
 
