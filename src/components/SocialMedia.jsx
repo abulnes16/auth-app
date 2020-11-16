@@ -1,9 +1,8 @@
 import React from "react";
 
-import styled from 'styled-components';
+import styled from "styled-components";
 
-
- const SocialMediaContainer = styled.div`
+const SocialMediaContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   width: 80%;
@@ -19,11 +18,16 @@ const SocialMedia = () => {
   ];
 
   return (
-    <SocialMediaContainer>
-      {socialMedia.map((link) => (
-        <img width="45" key={link.name} src={link.path} alt={link.name} />
-      ))}
-    </SocialMediaContainer>
+    <>
+      <p className="text-center text-muted">
+        or continue with these social profile
+      </p>
+      <SocialMediaContainer>
+        {socialMedia.map((link) => (
+          <img width="45" key={link.name} src={link.path} alt={link.name} />
+        ))}
+      </SocialMediaContainer>
+    </>
   );
 };
 
