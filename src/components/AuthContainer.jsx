@@ -11,7 +11,7 @@ const AuthContainer = styled.div`
 
   @media screen and (min-width: 768px) {
     width: 60%;
-    margin: 0 auto;
+    margin: ${(props) => (props.login ? "80px" : "0")} auto 0;
     padding: 40px 60px;
     border: 1px solid #bdbdbd;
     box-sizing: border-box;

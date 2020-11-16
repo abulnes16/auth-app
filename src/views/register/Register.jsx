@@ -29,7 +29,7 @@ const Register = () => {
           multiple paths for you to choose
         </Paragraph>
       </RegisterMessageContainer>
-      <RegisterForm></RegisterForm>
+      <RegisterForm/>
       <div className="register__footer">
         <SocialMedia />
         <div className="login-link">
