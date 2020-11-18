@@ -6,6 +6,7 @@ import { lightTheme, darkTheme } from "./constants/theme";
 import AppRouter from "./routes/Router";
 import Context from "./context";
 import Footer from "./components/layout/Footer";
+import Toggler from "./components/Toggler";
 
 function App() {
   const context = useContext(Context);
@@ -14,7 +15,7 @@ function App() {
       <ThemeProvider theme={context.theme === "light" ? lightTheme : darkTheme}>
         <GlobalStyles />
         <div className="App">
-          <button onClick={context.toggleTheme}>Switch Theme</button>
+          <Toggler onClick={context.toggleTheme} />
           <AppRouter />
           <Footer />
         </div>

@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   color: #333333;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -13,7 +13,6 @@ body {
   padding: 12px 15px;
 }
 
-
 .text-center {
   text-align: center;
 }
@@ -23,12 +22,9 @@ body {
   font-size: 14px;
 }
 
-
-
-.text-bold{
+.text-bold {
   font-weight: 700;
 }
-
 
 .link {
   text-decoration: none;
