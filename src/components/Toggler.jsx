@@ -26,6 +26,15 @@ const TogglerContainer = styled.div`
     margin-left: auto;
     background: #a5a3ab !important;
   }
+
+  @media screen and (min-width: 426px){
+    top: 10%;
+    right: 22%;
+  }
+
+  @media screen and (min-width: 768px){
+    right: 33%;
+  }
 `;
 
 const Toggler = ({ onClick }) => {
