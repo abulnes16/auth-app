@@ -28,13 +28,10 @@ const TogglerContainer = styled.div`
   }
 
   @media screen and (min-width: 426px){
-    top: 10%;
-    right: 22%;
+    top: 2%;
+    right: 2%;
   }
 
-  @media screen and (min-width: 768px){
-    right: 33%;
-  }
 `;
 
 const Toggler = ({ onClick }) => {
