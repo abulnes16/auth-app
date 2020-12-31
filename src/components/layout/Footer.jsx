@@ -5,9 +5,6 @@
 // React
 import React from "react";
 
-// Router
-import { useLocation } from "react-router-dom";
-
 // Style components
 import styled from "styled-components";
 
@@ -18,7 +15,7 @@ const FooterContainer = styled.footer`
   justify-content: space-between;
   position: absolute;
   margin: 0 auto;
-  bottom: ${(props) => (props.login ? "-15em" : "-80px")};
+  bottom: 2px;
   right: 0;
   left: 0;
 
@@ -33,12 +30,9 @@ const FooterContainer = styled.footer`
 `;
 
 const Footer = () => {
-  const location = useLocation();
-  const isInLogin = location.pathname === "/login";
-
 
   return (
-    <FooterContainer login={isInLogin}>
+    <FooterContainer>
       <a href="https://github.com/abulnes16" className="link text-light">
         @abulnes16
       </a>

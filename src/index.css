@@ -1,17 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
 
-body {
-  margin: 0;
-  font-family: "Noto Sans", sans-serif;
-  color: #333333;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.App {
-  position: relative;
-  padding: 12px 15px;
-}
 
 .text-center {
   text-align: center;

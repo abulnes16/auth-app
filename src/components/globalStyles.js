@@ -14,10 +14,16 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: all 0.50s linear;
+  position: relative;
+}
+
+@media screen and (max-width: 414px){
+  body {
+    padding-bottom: 2em;
+  }
 }
 
 .App {
-  position: relative;
   padding: 12px 15px;
 }
 `;

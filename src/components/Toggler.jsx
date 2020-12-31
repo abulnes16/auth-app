@@ -6,6 +6,9 @@
 // React
 import React, { useContext, useEffect, useState } from "react";
 
+// Router
+import { useLocation } from "react-router-dom";
+
 // React Transition
 import { CSSTransition } from "react-transition-group";
 
@@ -20,8 +23,8 @@ const TogglerContainer = styled.div`
   padding: 2px 5px;
   border-radius: 40px;
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: ${(props) => (props.inAuth ? "10px" : "5em")};
+  top: ${(props) => (props.inAuth ? "10px" : "20px")};
   background: ${(props) => props.background};
 
   div {
@@ -54,23 +57,27 @@ const TogglerContainer = styled.div`
     background: #a5a3ab !important;
   }
 
-  @media screen and (min-width: 426px) {
-    top: 2%;
-    right: 2%;
-  }
 `;
 
 const Toggler = ({ onClick }) => {
   const context = useContext(Context);
   const [color, setColor] = useState("");
+  const [inAuth, setinAuth] = useState(true);
+  const location = useLocation();
 
   useEffect(() => {
     const currentColor = context.theme === "light" ? "#efefef" : "#333038";
     setColor(currentColor);
   }, [context.theme]);
 
+  useEffect(() => {
+    const isInAuth =
+      location.pathname === "/" || location.pathname === "/login";
+    setinAuth(isInAuth);
+  }, [location]);
+
   return (
-    <TogglerContainer background={color} onClick={onClick}>
+    <TogglerContainer inAuth={inAuth} background={color} onClick={onClick}>
       <CSSTransition
         in={context.theme === "light" ? false : true}
         timeout={200}
