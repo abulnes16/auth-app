@@ -1,3 +1,14 @@
+/* Custom input styled component
+   Styled input for matching the app styles
+   props: 
+    - icon : Input left icon
+    - type : Input type
+    - placeholder: Input placeholder
+    - onChange : Input onChange function
+    - value: Input value 
+*/
+
+// Styled
 import styled from "styled-components";
 
 const InputContainer = styled.div`

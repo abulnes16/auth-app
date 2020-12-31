@@ -1,3 +1,7 @@
+/* App theme configuration
+  Contains the theme colors configuration for each theme
+*/
+
 export const lightTheme = {
   body: '#FFFFFF',
   text: '#333333',

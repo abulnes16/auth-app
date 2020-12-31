@@ -1,3 +1,6 @@
+/* App Context */
+
+// React
 import { createContext } from "react";
 
 const Context = createContext();

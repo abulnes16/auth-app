@@ -1,10 +1,24 @@
+/* App component
+  The app main entry
+*/
+
+// React
 import { useContext } from "react";
+
+// Context
+import Context from "./context";
+// Router
 import { BrowserRouter as Router } from "react-router-dom";
+import AppRouter from "./routes/Router";
+
+// Styled
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./components/globalStyles";
+
+// Constants
 import { lightTheme, darkTheme } from "./constants/theme";
-import AppRouter from "./routes/Router";
-import Context from "./context";
+
+// Components
 import Footer from "./components/layout/Footer";
 import Toggler from "./components/Toggler";
 

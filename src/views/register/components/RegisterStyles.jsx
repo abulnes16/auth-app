@@ -1,3 +1,7 @@
+/* Register styled components
+   Styled components to be used in the register view
+*/
+
 import styled from "styled-components";
 
 

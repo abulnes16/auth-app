@@ -1,5 +1,14 @@
+/* Logo component
+   App logo component, changes if the context theme changes 
+*/
+
+// React
 import React, { useContext, useEffect, useState } from "react";
+
+// Context
 import Context from "../context";
+
+
 const Logo = () => {
   const context = useContext(Context);
   const [logo, setLogo] = useState("");

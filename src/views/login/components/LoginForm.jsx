@@ -1,3 +1,8 @@
+/* Login form component 
+   Contains the login logic for authenticate the user
+*/
+
+// React
 import React from "react";
 
 // Styled components

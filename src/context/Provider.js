@@ -1,5 +1,11 @@
+/* Provider component
+  Provides the context for the whole app
+*/
+
+// React
 import React, { useState } from "react";
 
+// Context
 import Context from "./index";
 
 const Provider = ({ children }) => {

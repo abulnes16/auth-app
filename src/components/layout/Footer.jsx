@@ -1,7 +1,17 @@
+/* Footer component 
+   App footer for dev challenges. 
+*/
+
+// React
 import React from "react";
+
+// Router
 import { useLocation } from "react-router-dom";
+
+// Style components
 import styled from "styled-components";
 
+// Footer container styled component
 const FooterContainer = styled.footer`
   width: 90%;
   display: flex;
@@ -22,7 +32,7 @@ const FooterContainer = styled.footer`
   }
 `;
 
-const Footer = (props) => {
+const Footer = () => {
   const location = useLocation();
   const isInLogin = location.pathname === "/login";
 

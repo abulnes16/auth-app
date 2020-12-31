@@ -1,3 +1,7 @@
+/* Profile view
+   Renders the profile view in app
+*/
+
 import React from "react";
 
 const Profile = () => {

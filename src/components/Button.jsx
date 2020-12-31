@@ -1,3 +1,8 @@
+/* Custom button styled component 
+   Button with the app style. 
+*/
+
+// Styled
 import styled from "styled-components";
 
 export default styled.button`
@@ -10,5 +15,5 @@ export default styled.button`
   outline: none;
   border: none;
   width: 100%;
-  ${props => props.width ? `width: ${props.width}` : ''}
+  ${(props) => (props.width ? `width: ${props.width}` : "")}
 `;

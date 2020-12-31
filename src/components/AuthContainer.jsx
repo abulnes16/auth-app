@@ -1,3 +1,8 @@
+/* AuthContainer styled component
+  Container for the authentication forms. 
+*/
+
+// Styled
 import styled from "styled-components";
 
 const AuthContainer = styled.div`

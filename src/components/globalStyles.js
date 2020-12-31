@@ -1,3 +1,7 @@
+/* CSS in JS Global Styles 
+  Holds the styles for the application
+*/
+
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`

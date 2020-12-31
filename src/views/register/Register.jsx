@@ -1,5 +1,8 @@
-/* Register view */
+/* Register view 
+  Renders the register form in app
+*/
 
+// React
 import React from "react";
 
 //Styled components
@@ -8,7 +11,7 @@ import {
   RegisterMessageContainer,
 } from "./components/RegisterStyles";
 
-import AuthContainer from '../../components/AuthContainer';
+import AuthContainer from "../../components/AuthContainer";
 
 //Components
 import RegisterForm from "./components/RegisterForm";
@@ -29,7 +32,7 @@ const Register = () => {
           multiple paths for you to choose
         </Paragraph>
       </RegisterMessageContainer>
-      <RegisterForm/>
+      <RegisterForm />
       <div className="register__footer">
         <SocialMedia />
         <div className="login-link">

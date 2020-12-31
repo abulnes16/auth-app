@@ -1,5 +1,13 @@
+/* Login view 
+   Renders the login view in app. 
+*/
+
+// React
 import React from "react";
+// Router
 import { Link } from "react-router-dom";
+
+// Components
 import AuthContainer from "../../components/AuthContainer";
 import Logo from "../../components/Logo";
 import SocialMedia from "../../components/SocialMedia";

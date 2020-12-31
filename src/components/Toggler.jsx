@@ -1,6 +1,18 @@
+/* Toggle button component 
+   Renders the toggle button component and manage the 
+   theme in the application
+*/
+
+// React
 import React, { useContext, useEffect, useState } from "react";
+
+// React Transition
 import { CSSTransition } from "react-transition-group";
+
+// Context
 import Context from "../context";
+
+// Styled
 import styled from "styled-components";
 
 const TogglerContainer = styled.div`
@@ -19,19 +31,33 @@ const TogglerContainer = styled.div`
     background: white;
   }
 
+  .dark-toggle {
+    transform: translateX(0);
+  }
+
   .dark-toggle-enter-active {
-    transition: margin-left 1s linear;
+    transform: translateX(20px);
+    background: #a5a3ab !important;
+    transition: all 0.2s linear;
+  }
+
+  .dark-toggle-exit {
+    transform: translateX(20px);
+  }
+
+  .dark-toggle-exit-active {
+    transform: translateX(0);
+    transition: all 0.2s linear;
   }
   .dark-toggle-enter-done {
     margin-left: auto;
     background: #a5a3ab !important;
   }
 
-  @media screen and (min-width: 426px){
+  @media screen and (min-width: 426px) {
     top: 2%;
     right: 2%;
   }
-
 `;
 
 const Toggler = ({ onClick }) => {

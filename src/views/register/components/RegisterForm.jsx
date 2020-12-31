@@ -1,3 +1,9 @@
+/* Register form component
+   Manage the register logic for creating an account 
+   in the app 
+*/
+
+// React
 import React from "react";
 
 // Styled components

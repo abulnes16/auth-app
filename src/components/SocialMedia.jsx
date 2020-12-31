@@ -1,6 +1,13 @@
-import React from "react";
+/* Social media component
+   Renders the social media icons for 3rd parties authentication
+*/
 
+// React
+import React from "react";
+// Styled 
 import styled from "styled-components";
+// Data
+import socialMedia from "../constants/social-media";
 
 const SocialMediaContainer = styled.div`
   display: flex;
@@ -10,13 +17,6 @@ const SocialMediaContainer = styled.div`
 `;
 
 const SocialMedia = () => {
-  const socialMedia = [
-    { path: "assets/images/Google.svg", name: "Google" },
-    { path: "assets/images/Facebook.svg", name: "Facebook" },
-    { path: "assets/images/Twitter.svg", name: "Twitter" },
-    { path: "assets/images/Github.svg", name: "Github" },
-  ];
-
   return (
     <>
       <p className="text-center text-muted">
